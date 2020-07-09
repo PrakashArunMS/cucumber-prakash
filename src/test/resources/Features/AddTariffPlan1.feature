@@ -1,4 +1,5 @@
 #Author: prakash.email@your.domain.com
+
 Feature: Add Tariff Plan1
   User creating new tariff plan
     Scenario: Hardcoded Info1
@@ -40,7 +41,7 @@ Feature: Add Tariff Plan1
       |  700 | 3500 | 500 | 400 | 5 | 20 | 4 |
     And User click on Tariiff submit button
     Then User is displayed with the message tariff plann created
-    
+  @sanity @prakash  
   Scenario: two dim map
     Given User launch tellecom application
     And User navigates into tarriff plan page
