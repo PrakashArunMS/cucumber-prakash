@@ -14,7 +14,7 @@ import cucumber.api.junit.Cucumber;
 dryRun=false,
 plugin="html:target//Cucumber-html-reports",
 monochrome=true,
-tags={"@sanity","@prakash"})
+tags={"@sanityCustomer"})
 public class TestRunner {
 
 }

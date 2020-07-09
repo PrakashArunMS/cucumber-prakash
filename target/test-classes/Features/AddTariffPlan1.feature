@@ -43,7 +43,6 @@ Feature: Add Tariff Plan1
     Then User is displayed with the message tariff plann created
   @sanity @prakash  
   Scenario: two dim map
-    Given User launch tellecom application
     And User navigates into tarriff plan page
     When User fills all the fields by using 2dim map
       | rental | local_minutes | inter_minutes | sms_pack | minutes_charges | inter_charges | sms_charges |
