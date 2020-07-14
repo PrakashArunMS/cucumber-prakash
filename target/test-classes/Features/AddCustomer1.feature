@@ -1,5 +1,5 @@
 #Author: prakash.email@your.domain.com
-@sanityCustomer
+
 Feature: Add Customer Step
   User creating new account
 
@@ -18,7 +18,7 @@ Feature: Add Customer Step
     And User click on submit button page1
     Then User should be displayed customer id is generated in page1
 
-  @sanity
+@sanity @prakash
   Scenario: one dimensional map1
     When User enters all the fields by using 1dim map
       | fname | prakash          |

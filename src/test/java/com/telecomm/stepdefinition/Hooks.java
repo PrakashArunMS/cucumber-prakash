@@ -3,17 +3,17 @@ package com.telecomm.stepdefinition;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.telecom.resources.Commonaction;
+
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
-public class Hooks {
-	static WebDriver driver;
+public class Hooks extends Commonaction {
+	Commonaction ca=new Commonaction();
 @Before
 public void beforeScenario() {
-	System.setProperty("webdriver.chrome.driver", "C:\\Users\\PRAKASH\\workspace\\Cucumber1\\driver\\chromedriver.exe");
-	driver = new ChromeDriver();
-	driver.manage().window().maximize();
-	driver.get("http://www.demo.guru99.com/telecom/");
+	
+	ca.lanuch("http://www.demo.guru99.com/telecom/");
 	System.out.println("Before Scenario executed");
 
 }
