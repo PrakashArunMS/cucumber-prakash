@@ -12,7 +12,7 @@ import cucumber.api.junit.Cucumber;
 
 		glue="com.telecomm.stepdefinition",
 dryRun=false,
-plugin="html:target//Cucumber-html-reports",
+plugin={"html:target//Cucumber-html-reports","json:target/reports.json"},
 monochrome=true,
 tags={"@sanity,@prakash"})
 public class TestRunner {
